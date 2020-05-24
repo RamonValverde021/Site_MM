@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Melhor Modelo</title>
+    <link rel="icon" href="../_media/icone-logomarca.png">
+    <link rel="stylesheet" type="text/css" href="../_css/_estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="../_css/_slides.css"/>
+    <link rel="stylesheet" type="text/css" href="../_css/_contato.css"/>
+</head>
+<body>
+<input type="checkbox" id="bt-menu"/>
+<label for="bt-menu" id="iconeMenu" onclick="mudaIconeMenu()">&#9776;</label> <!-- &#9776; 	&#10006; -->
+<header id="cabecalho">
+    <nav id="menu" class="clsMenu">
+        <ul id="itens-menu">
+            <li class="menuPrinc menuPrincHome"><a class="linkMenu" id="home" href="../index.html">HOME</a></li>
+            <li class="menuPrinc menuPrincDoc"><a class="linkMenu" id="documentos" href="../documentos.html">DOCUMENTOS</a>
+                <ul id="subitens-menu" class="clsSubMenu" type="none">
+                    <li class="menuSec" id="borda01"><a class="linkMenu" id="prof" href="../_documentos/profissionais.html">Profissionais</a></li>
+                    <li class="menuSec" id="borda02"><a class="linkMenu" id="part" href="../_documentos/particulares.html">Particulares</a></li>
+                    <li class="menuSec"><a class="linkMenu" id="tds" href="../documentos.html">Todos os
+                        documentos</a></li>
+                </ul>
+            </li>
+            <li class="menuPrinc menuPrincFaq"><a class="linkMenu" id="faq" href="../faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+<h4 id="contato">CONTATO</h4>
+    <div id="contatoMensagem">
+        <form id="formContato" method="post" action="_enviarEmail.php">
+        <fieldset id="email">
+            <legend>E-mail: </legend>
+            <input type="text" id="inputEmail" placeholder="Digite o seu e-mail:"/>
+        </fieldset>
+        <fieldset id="mensagem">
+            <legend>Mensagem: </legend>
+            <textarea id="txtMensagem" placeholder="Digite aqui sua mensagem..."></textarea></p>
+        </fieldset>
+        <div id="centralizaBtn"><input type="submit" id="btnContato" value="ENVIAR"></div>
+        </form>
+    </div>
+<div id="espaco"></div>
+<footer id="rodape">
+    <section id="sctRodape">
+        <aside id="asdEsqRod">
+            <ul id="ulRodape" type="none">
+                <li><a class="clsRodape" href="../faq.html" target="_blank">FAQ</a></li></br>
+                <li><a class="clsRodape" href="../contato.html" target="_blank">Contato</a></li></br>
+                <li><a class="clsRodape" href="../documentos.html" target="_blank">Documentos</a></li></br>
+            </ul>
+        </aside>
+        <aside id="asdDirRod">
+            <ul type="none">
+                <li><img class="iconeRodape" src="../_media/icone-FaceBook-02.png"/><a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a><a> Siga, Curta ;)</a></br></br></li>
+                <li><img class="iconeRodape" src="../_media/icone-Gmail.png"/><a>melhor.modelo<wbr/>@gmail.com</a></li>
+            </ul>
+        </aside>
+    </section>
+    <p>Copyright&copy 2020 - by Melhor Modelo</p>
+</footer>
+</section>
+<div class="btn-voltar  ">
+    <a class="btn-voltar-link" href="" title="">&#8679; Volte ao Topo &#8679;</a>
+</div>
+</body>
+<script src="../_javascript/jquery-3.5.0.min.js"></script>
+<script language="JavaScript" src="../_javascript/_funcoes.js"></script>
+<script language="JavaScript" src="../_javascript/_slides.js"></script>
+</html>

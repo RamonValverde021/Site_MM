@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+    <title>Melhor Modelo</title>
+    <link rel="icon" href="_media/icone-logomarca.png">
+    <link rel="stylesheet" type="text/css" href="_css/_estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/_slides.css"/>
+    <style>
+        a#home {
+            padding-bottom: 10px;
+            border-bottom: 10px solid #fcc831;
+        }
+        @media only screen and (max-width: 850px) {
+            a#home {
+                padding-bottom: 0px;
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<input type="checkbox" id="bt-menu"/>
+<label for="bt-menu" id="iconeMenu" onclick="mudaIconeMenu()">&#9776;</label> <!-- &#9776; 	&#10006; -->
+<header id="cabecalho">
+            <nav id="menu" class="clsMenu">
+                    <ul id="itens-menu">
+                        <li class="menuPrinc menuPrincHome"><a class="linkMenu" id="home" href="index.html">HOME</a></li>
+                        <li class="menuPrinc menuPrincDoc"><a class="linkMenu" id="documentos" href="documentos.html">DOCUMENTOS</a>
+                            <ul id="subitens-menu" class="clsSubMenu" type="none">
+                                <li class="menuSec" id="borda01"><a class="linkMenu" id="prof" href="_documentos/profissionais.html">Profissionais</a></li>
+                                <li class="menuSec" id="borda02"><a class="linkMenu" id="part" href="_documentos/particulares.html">Particulares</a></li>
+                                <li class="menuSec"><a class="linkMenu" id="tds" href="documentos.html">Todos os
+                                    documentos</a></li>
+                            </ul>
+                        </li>
+                        <li class="menuPrinc menuPrincFaq"><a class="linkMenu" id="faq" href="faq.html">FAQ</a></li>
+                    </ul>
+            </nav>
+</header>
+    <section id="corpo">
+            <div id="divCrie">
+                <section id="sctCrie">
+                    <aside id="asdCrie"><h1>CRIE FACILMENTE SEUS </br>DOCUMENTOS JURÍDICOS!</h1>
+                        <p>&nbsp;&nbsp;Te guiamos e orientamos nos preenchimentos </br>&nbsp;&nbsp;dos seus documentos.</p>
+                    </aside>
+                </section>
+            </div>
+        <div id="slides" class="galeriaConteiner">
+            <div class="slideShowConteiner">
+                <div id="playPauseBtn" onclick="playPauseSlides()"></div>
+                <div class="setaEsquerda" onclick="plusSlides(-1)"><span class="seta esquerdaSeta"></span></div>
+                <div class="setaDireita" onclick="plusSlides(1)"><span class="seta direitaSeta"></span></div>
+                <div class="subtituloHolder"><p class="textoSubtitulo"></p></div>
+                <div class="imagemHolder" id="slide01">
+                    <p class="textoSubtitulo"> 1. Escolha um modelo </p>
+                </div>
+                <div class="imagemHolder" id="slide02">
+                    <p class="textoSubtitulo"> 2. Preencha o documento </p>
+                </div>
+                <div class="imagemHolder" id="slide03">
+                    <p class="textoSubtitulo"> 3. Salve - imprima </p>
+                </div>
+            </div>
+            <div id="dotsConteiner"></div>
+        </div>
+        <section id="adivogados">
+            <h2>NÓS O AJUDAMOS A PREENCHER SEUS DOCUMENTOS!</h2>
+            <p>Uma equipe de advogados e juristas redige os modelos</p>
+        </section>
+        <div id="borda"></div>
+        <div id="exemplos">
+            <h2>EXEMPLOS DE DOCUMENTOS PARA BAIXAR</h2>
+            <section id="sctExemp">
+                <aside id="asdEsquerdo">
+                <h3>Profissionais</h3>
+                <ul type="disc">
+                    <li><a href="_documentos/documento01.html" target="_blank">Contrato social de sociedade simples</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Ata de assembleia ou reunião de sócios</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de locação comercial</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de fiança</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato social de sociedade limitada</a></li>
+                </ul>
+                </aside>
+                <aside id="asdDireito">
+                <h3>Particulares</h3>
+                <ul type="disc">
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de sublocação</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Termo de confissão e compensação de dívidas</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de doação</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de promessa de cessão de direitos hereditários</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de locação residencial</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de promessa de compra e venda de imóvel</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de compra e venda de bens móveis</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Termo de confissão e renegociação de dívida</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de empréstimo de dinheiro</a></li>
+                    <li><a href="_documentos/documentoVazio.html" target="_blank">Contrato de troca de bens</a></li>
+                </ul>
+                </aside>
+            </section>
+        </div>
+        <div id="espaco"></div>
+        <footer id="rodape">
+            <section id="sctRodape">
+                <aside id="asdEsqRod">
+                    <ul id="ulRodape" type="none">
+                        <li><a class="clsRodape" href="faq.html">FAQ</a></li></br>
+                        <li><a class="clsRodape" href="_paginas/_contato.html">Contato</a></li></br>
+                        <li><a class="clsRodape" href="documentos.html">Documentos</a></li></br>
+                    </ul>
+                </aside>
+                <aside id="asdDirRod">
+                    <ul type="none">
+                        <li><img class="iconeRodape" src="_media/icone-FaceBook-02.png"/><a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a><a> Siga, Curta ;)</a></br></br></li>
+                        <li><img class="iconeRodape" src="_media/icone-Gmail.png"/><a>melhor.modelo<wbr/>@gmail.com</a></li>
+                    </ul>
+                </aside>
+            </section>
+                <p>Copyright&copy 2020 - by Melhor Modelo</p>
+        </footer>
+    </section>
+<div class="btn-voltar">
+    <a class="btn-voltar-link" href="" title="">&#8679; Volte ao Topo &#8679;</a>
+</div>
+</body>
+    <script src="_javascript/jquery-3.5.0.min.js"></script>
+    <script language="JavaScript" src="_javascript/_funcoes.js"></script>
+    <script language="JavaScript" src="_javascript/_slides.js"></script>
+</html>

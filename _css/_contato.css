@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+h4#contato {
+    font-family: "Arial", sans-serif;
+    font-size: 20pt;
+    font-weight: 700;
+    list-style: none;
+    width: auto;
+    text-align: center;
+    color: #0083cb;
+    text-decoration: none;
+    padding: 40px 30px;
+}
+form#formContato {
+}
+
+div#contatoMensagem {
+    background-color: white;
+    padding: 40px;
+    margin: 0 25% 40px 25%;
+    min-width: 50%;
+    width: auto;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+input#inputEmail, textarea#txtMensagem {
+    font-family: "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 12pt;
+    margin: 15px;
+    padding: 15px 5%;
+    width: 78%;
+}
+textarea#txtMensagem {
+    height: 200px;
+}
+legend {
+    color: #606060;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+fieldset#email, fieldset#mensagem {
+    border-color: rgba(60,60,60,0.3);
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    transition: all .4s;
+}
+div#centralizaBtn {
+    text-align: center;
+    width: 100%;
+}
+input#btnContato {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 600;
+    text-decoration: none;
+    color: #343843;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 12px 20px;
+    transition: all .4s;
+    margin-top: 15px;
+}
+input#btnContato:hover {
+    color: #e7e7e7;
+    background-color: #0083cb;
+    cursor: pointer;
+}
