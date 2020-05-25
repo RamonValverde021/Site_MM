@@ -197,6 +197,16 @@ div#slide01 {
     background-position: 50% 50%; /* centralizando a imagem */
     background-size: auto 100%;
 }
+div#slides h1.tituloSlides {
+    position: relative;
+    top: 16%;
+    left: 47%;
+    font-family: Arial, sans-serif;
+    font-size: 27pt;
+    font-weight: 700;
+    color: #0083cb;
+    font-variant:small-caps;
+}
 div#slide02 {
     background-image: url('../_media/slide2.png');
     background-repeat: no-repeat;
